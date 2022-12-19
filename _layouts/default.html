@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+
+    <!-- code for centering in the middle of the page taken from https://www.w3schools.com/howto/howto_css_center-vertical.asp-->
+
+    <style>
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+    </style>
+        
+        <div class="container">
+          <div class="center">
+            <p>{{ content }}</p>
+          </div>
+        </div>
+
+  </body>
+</html>
