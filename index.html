@@ -1,0 +1,12 @@
+---
+layout: default
+title: 365 raisins
+---
+
+{% assign now = site.time | date_to_string %}
+{% assign current = site.data.raisins | where:"date", now | first%}
+{% for value in current %}
+{% if value[1] != now %}
+    {{ value[1]}}
+{% endif %}
+{% endfor %}
