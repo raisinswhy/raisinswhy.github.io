@@ -1,9 +1,10 @@
 # File: .github/workflows/rebuild.yml
+# taken from https://svrooij.io/2020/06/27/rebuild-github-pages/
 name: Rebuild
 
 on:
   schedule:
-    - cron:  '0 1 * * *' # Runs every day at 6am
+    - cron:  '0 1 * * *' # Runs every day at 1am
 
 jobs:
   refresh:
